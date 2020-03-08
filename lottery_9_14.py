@@ -18,16 +18,16 @@ class Lottery:
 
     def user_selected_items(self):
         """
-        Let the user choose 4 letters/numbers.
+        Let the user choose 4 letters/numbers (can be mixed).
         Eliminate whitespace from user input if needed.
         """
-        user_input = input("Please insert 4 numbers or letter: ")
+        user_input = input("Please insert 4 numbers/letters (can be mixed): ")
         stripped_user_input = user_input.replace(" ", "")
         self.user_pick += stripped_user_input
         return f"Your combination is: {self.user_pick}"
 
     def randomly_selected_items(self):
-        """Add 4 random letters/numbers as lucky winners into a new list."""
+        """Add 4 random letters/numbers as lucky winners into a new string."""
         for _ in range(4):
             self.lucky_winners += choice(self.potential_winners)
         return f"This week's winner combination is: {self.lucky_winners}"
