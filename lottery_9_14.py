@@ -1,4 +1,14 @@
-"""Modelling a lottery game."""
+"""
+Modelling a lottery game.
+
+EXAMPLE:
+
+Please insert 4 numbers/letters (can be mixed): 4a5b
+Your combination is: 4a5b
+This week's winner combination is: c431
+Sorry - better luck next time!
+
+"""
 
 
 from random import choice
